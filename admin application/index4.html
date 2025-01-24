@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; 
+    script-src 'self' https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js https://apis.google.com/js/api.js https://apis.google.com 
+    https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js https://www.google.com/recaptcha/enterprise.js https://www.gstatic.com/recaptcha/releases/; 
+    style-src 'self'; 
+    img-src 'self'  https://firebasestorage.googleapis.com/;
+    frame-src https://desi-food-express.firebaseapp.com/ https://www.google.com/; 
+    connect-src 'self'  https://securetoken.googleapis.com https://identitytoolkit.googleapis.com/ https://firestore.googleapis.com/ https://content-firebaseappcheck.googleapis.com/" />
+    <title>IF(Owner)</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="icon" type="image/png" sizes="16x16 32x32 48x48 76x76 96x96" href="Images/logo1.png" />
+    <link rel="manifest" href="manifest1.json" />
+    <script src="script24.js" type="module"></script>
+    <script src="script4.js" type="module"></script>
+</head>
+
+<body id="bdy">
+    <section id="Loader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+    <section id="main">
+        <nav>
+            <div id="bars">
+                <img src="Images/logo1.png" alt="Logo" id="LOGO">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <ul id="nav-list" class="c2">
+                <li><img src="Images/logo1.png" alt="Logo" id="LOGO"></li>
+                <li><a href="index5.html" class="nav-item"><i class="fa-solid fa-pen"></i>Edit Dishes</a></li>
+                <li><a href="index6.html" class="nav-item"><i class="fa-solid fa-plus"></i>Add new Dishes</a></li>
+                <li><a href="index10.html" class="nav-item"><i class="fa-solid fa-eye"></i>View Orders</a></li>
+                <li>
+                    <p class="nav-item" id="Logout"><i class="fa-solid fa-user"></i>Log Out</p>
+                </li>
+            </ul>
+        </nav>
+
+        <table class="header">
+            <tr>
+                <td>
+                    <h1 id="title">Indian fusion</h1>
+                    <h3 id="caption">A culinary delight</h3>
+                </td>
+                <td>
+                    <img id="himg" src="Images/Header image.jpg"></img>
+                </td>
+            </tr>
+        </table>
+
+        <div class="start">
+            <p id="menu"><b>MENU</b></p>
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+        </div>
+
+        <lable for="searchBar"></lable>
+        <input type="search" id="searchBar" placeholder="Search dishes">
+
+        <button class="time" id="t1">Starters</button>
+        <button class="time" id="t2">Main Course</button>
+
+        <button class="box" id="BVEG">Veg</button>
+        <button class="box" id="BNONVEG">Non-veg</button>
+
+        <div class="CONTAINER" id="cbv">
+
+            <div class="wrapper" id="bvw">
+            </div>
+
+            <section class="carets">
+                <button class="move dmove" id="move1" data-index="1">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <button class="move dmove" id="move2" data-index="2">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </section>
+        </div>
+
+        <div class="CONTAINER hidden" id="cbnv">
+
+            <div class="wrapper" id="bnvw">
+            </div>
+
+            <section class="carets">
+                <button class="move dmove" id="move1" data-index="3">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <button class="move dmove" id="move2" data-index="4">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </section>
+        </div>
+
+        <div class="CONTAINER hidden" id="clv">
+
+            <div class="wrapper" id="lvw">
+            </div>
+
+            <section class="carets">
+                <button class="move" id="move1" data-index="5">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <button class="move" id="move2" data-index="6">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </section>
+        </div>
+
+        <div class="CONTAINER hidden" id="clnv">
+
+            <div class="wrapper" id="lnvw">
+            </div>
+
+            <section class="carets">
+                <button class="move" id="move1" data-index="7">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <button class="move" id="move2" data-index="8">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </section>
+        </div>
+
+        <div id="price_box">
+            <i class="fa-solid fa-bowl-food"></i>
+            <div id="number">0</div>
+        </div>
+
+        <footer id="Footer">Indian fusion
+            <i class="fa-sharp fa-solid fa-registered"></i></br>
+        </footer>
+    </section>
+</body>
+
+</html>

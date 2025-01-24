@@ -1,0 +1,203 @@
+@media (width<320px) or (width>1550px) {
+  body {
+    display: none;
+  }
+}
+
+body {
+  overflow-y: scroll;
+}
+
+#orderFetched {
+  margin: 0;
+  margin-left: calc((100% - 304px) / 2);
+  margin-right: calc((100% - 310px) / 2);
+  height: 50px;
+  padding: 50px 80px;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 8px;
+  position: fixed;
+  right: 1px;
+  top: 10px;
+  border: 3px solid #fa6400;
+  background-color: white;
+}
+
+.ofv {
+  opacity: 1;
+  z-index: 5;
+  transition: all .1s ease-out;
+}
+
+.ofnv {
+  opacity: 0;
+  z-index: -15;
+  transition: all .1s ease-in;
+}
+
+/* Mobiles (320px to 767px) */
+.add_box {
+  background-color: white;
+  color: black;
+  border: 2px solid coral;
+  box-shadow: -1px 1px coral, 1px -1px coral;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+label {
+  margin: 26px 0px;
+}
+
+#time {
+  margin-top: 0px;
+}
+
+#SAVE {
+  height: 40px;
+  background-color: rgba(0, 128, 0, 0.833);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#M_title {
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.options {
+  border: none;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+.options:focus {
+  outline: none;
+}
+
+.dish_input {
+  border: 1px solid black;
+}
+
+#AuthenticatingBox {
+  width: 99%;
+  height: 99%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 20;
+  top: 0px;
+}
+
+.ihidden {
+  display: none;
+}
+
+#authSpinner {
+  margin: 0 auto;
+  margin-top: 17%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 7px solid #fa6400;
+  border-bottom: 7px solid rgba(0, 0, 0, 0);
+  animation: authSpin 1.6s linear infinite forwards;
+}
+
+#AuthenticatingBox p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@keyframes authSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 650px) {
+  * {
+    font-size: 17px;
+  }
+
+  .add_box {
+    width: 304px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .options {
+    width: 100%;
+  }
+
+  #Image {
+    margin-left: 0;
+  }
+
+  #SAVE {
+    width: 110px;
+    margin-top: 45px;
+  }
+}
+
+/* Tablets (768px to 1023px) */
+@media (min-width: 651px) and (max-width: 1023px) {
+  * {
+    font-size: 25px;
+  }
+
+  .add_box {
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .options {
+    width: 400px;
+  }
+
+  #Image {
+    margin-left: 100px;
+  }
+
+  #SAVE {
+    width: 110px;
+    margin-top: 45px;
+  }
+}
+
+/* Laptops (1024px to 1550px) */
+@media (min-width: 1024px) and (max-width: 1550px) {
+  * {
+    font-size: 26px;
+  }
+
+  .add_box {
+    width: 730px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .options {
+    width: 400px;
+  }
+
+  #Image {
+    margin-left: 100px;
+  }
+
+  #SAVE {
+    width: 110px;
+    margin-top: 45px;
+  }
+}

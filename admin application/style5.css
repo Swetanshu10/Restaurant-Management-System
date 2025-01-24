@@ -1,0 +1,516 @@
+@media (width<320px) or (width>1550px) {
+    body {
+        display: none;
+    }
+}
+
+@media(min-width:320px) and (max-width:1550px) {
+
+    body {
+        overflow-y: scroll;
+    }
+
+    .lds-ellipsis {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin: 40vh 44%;
+    }
+
+    .lds-ellipsis div {
+        position: absolute;
+        top: 33px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #fa6400;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+
+    .lds-ellipsis div:nth-child(1) {
+        left: 8px;
+        animation: lds-ellipsis1 0.6s infinite;
+    }
+
+    .lds-ellipsis div:nth-child(2) {
+        left: 8px;
+        animation: lds-ellipsis2 0.6s infinite;
+    }
+
+    .lds-ellipsis div:nth-child(3) {
+        left: 32px;
+        animation: lds-ellipsis2 0.6s infinite;
+    }
+
+    .lds-ellipsis div:nth-child(4) {
+        left: 56px;
+        animation: lds-ellipsis3 0.6s infinite;
+    }
+
+    @keyframes lds-ellipsis1 {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes lds-ellipsis3 {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0);
+        }
+    }
+
+    @keyframes lds-ellipsis2 {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translate(24px, 0);
+        }
+    }
+
+    #main {
+        display: none;
+    }
+
+    header {
+        width: 98.5vw;
+        height: 200px;
+        overflow: hidden;
+        background-color: #fa6400;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header article {
+        margin-left: 15px;
+    }
+
+    #title {
+        color: white;
+    }
+
+    #caption {
+        color: white;
+    }
+
+    @media (max-width:601px) {
+        #LOGO {
+            width: 105px;
+            height: 105px;
+        }
+    }
+
+    @media (min-width:601px) and (max-width:1000px) {
+        #LOGO {
+            width: 130px;
+            height: 130px;
+        }
+    }
+
+    @media (min-width:1000px) and (max-width:1550px) {
+        #LOGO {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    #edit {
+        margin-top: 90px;
+    }
+
+    @media(max-width:451px) {
+        #edit {
+            font-size: 20px;
+        }
+    }
+
+    @media(min-width:451px) and (max-width:601px) {
+        #edit {
+            font-size: 23px;
+        }
+    }
+
+    @media(min-width:601px) and (max-width:1000px) {
+        #edit {
+            font-size: 27px;
+        }
+    }
+
+    @media(min-width:1000px) and (max-width:1550px) {
+        #edit {
+            font-size: 30px;
+        }
+    }
+
+    .fa-pen {
+        margin-right: 6px;
+    }
+
+    #searchBar {
+        display: block;
+        width: 297px;
+        height: 36px;
+        font-size: 1em;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        outline: none;
+    }
+
+    @media(min-width:618px) {
+        #searchBar {
+            width: 550px;
+        }
+    }
+
+    @media(min-width:915px) {
+        #searchBar {
+            width: 800px;
+            height: 41px;
+        }
+    }
+
+    @media(min-width:1235px) {
+        #searchBar {
+            width: 1000px;
+            height: 41px;
+        }
+    }
+
+    @media(max-width:600px) {
+        .time {
+            display: inline-block;
+            min-width: 46vw;
+            height: 8vw;
+            font-size: 5vw;
+            text-align: center;
+            background-color: white;
+            color: grey;
+            border: none;
+        }
+    }
+
+    @media(min-width:601px) and (max-width:867px) {
+        .time {
+            display: inline-block;
+            min-width: 47vw;
+            height: 5vw;
+            font-size: 4.1vw;
+            text-align: center;
+            background-color: white;
+            color: grey;
+            border: none;
+        }
+    }
+
+    @media(min-width:867px) and (max-width:1000px) {
+        .time {
+            display: inline-block;
+            min-width: 48vw;
+            height: 6vw;
+            font-size: 4vw;
+            text-align: center;
+            background-color: white;
+            color: grey;
+            border: none;
+        }
+    }
+
+    @media(min-width:1001px) and (max-width:1550px) {
+        .time {
+            display: inline-block;
+            min-width: 48.3vw;
+            height: 4.1vw;
+            font-size: 2.7vw;
+            text-align: center;
+            background-color: white;
+            color: grey;
+            border: none;
+        }
+    }
+
+    #t1 {
+        color: rgba(222, 30, 62, 0.8);
+        border-bottom: 3px solid rgba(222, 30, 62, 0.8);
+    }
+
+    .time:hover {
+        color: rgba(222, 30, 62, 0.8);
+        cursor: pointer;
+    }
+
+    @media(max-width:600px) {
+        .box {
+            margin-top: 40px;
+            width: 46.8vw;
+            height: 8vw;
+            display: inline-block;
+            font-size: 5vw;
+            border: none;
+            background-color: white;
+            color: grey;
+            cursor: pointer;
+        }
+    }
+
+    @media(min-width:601px) and (max-width:867px) {
+        .box {
+            margin-top: 50px;
+            width: 47vw;
+            height: 6vw;
+            display: inline-block;
+            font-size: 4vw;
+            border: none;
+            background-color: white;
+            color: grey;
+            cursor: pointer;
+        }
+    }
+
+    @media(min-width:867px) and (max-width:1000px) {
+        .box {
+            margin-top: 50px;
+            width: 48vw;
+            height: 4.6vw;
+            display: inline-block;
+            font-size: 3vw;
+            border: none;
+            background-color: white;
+            color: grey;
+            cursor: pointer;
+        }
+    }
+
+    @media(min-width:1001px) and (max-width:1550px) {
+        .box {
+            margin-top: 50px;
+            width: 48vw;
+            height: 3.5vw;
+            display: inline-block;
+            font-size: 2.6vw;
+            border: none;
+            background-color: white;
+            color: grey;
+            cursor: pointer;
+        }
+    }
+
+    #BVEG {
+        color: green;
+        border-bottom: 2px solid green;
+    }
+
+    #BVEG:hover {
+        color: green;
+    }
+
+    #BNONVEG:hover {
+        color: red;
+    }
+
+    .carets {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .carets button {
+        width: 40px;
+        height: 40px;
+        font-size: 27px;
+        cursor: pointer;
+        background: linear-gradient(to right, orange, #fa6400);
+        color: white;
+        border: 2px solid #fa6400;
+        border-radius: 50%;
+    }
+
+    .dishes_container {
+        position: relative;
+        width: 98vw;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .wrapper {
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    @media(max-width:400px) {
+        .veg-item {
+            margin-top: 20px;
+            display: inline-block;
+            width: 96%;
+            text-align: center;
+            font-size: 5.1vw;
+            background-color: #fcc49f;
+            border: 3px solid #fa6400;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    @media(min-width:401px) and (max-width:501px) {
+        .veg-item {
+            margin: 20px 7%;
+            margin-bottom: 0px;
+            display: inline-block;
+            width: 83.4%;
+            text-align: center;
+            font-size: 4.5vw;
+            background-color: #fcc49f;
+            border: 3px solid #fa6400;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    @media(min-width:501px) and (max-width:800px) {
+        .veg-item {
+            margin-top: 20px;
+            width: 48%;
+            display: inline-block;
+            text-align: center;
+            font-size: 2.6vw;
+            background-color: #fcc49f;
+            border: 3px solid #fa6400;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    @media(min-width:801px) and (max-width:900px) {
+        .veg-item {
+            margin-top: 20px;
+            width: 46%;
+            margin: 20px 1%;
+            margin-bottom: 0px;
+            display: inline-block;
+            text-align: center;
+            font-size: 2.5vw;
+            background-color: #fcc49f;
+            border: 3px solid #fa6400;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    @media(min-width:901px) and (max-width:1100px) {
+        .veg-item {
+            margin-top: 20px;
+            width: 31%;
+            margin-left: 1%;
+            margin-bottom: 0px;
+            margin-right: 0%;
+            display: inline-block;
+            text-align: center;
+            font-size: 1.7vw;
+            background-color: #fcc49f;
+            border: 3px solid #fa6400;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    @media(min-width:1101px) and (max-width:1550px) {
+        .veg-item {
+            margin-top: 60px;
+            display: inline-block;
+            width: 24%;
+            text-align: center;
+            font-size: 1.32vw;
+            background-color: #fcc49f;
+            border: 3px solid #fa6400;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    #logo {
+        width: 100%;
+        height: 166px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .tc1 {
+        color: green;
+    }
+
+    .tc2 {
+        color: red;
+    }
+
+    .dt {
+        font-size: 12px;
+    }
+
+    .dish_description {
+        word-break: break-all;
+        text-wrap: wrap;
+    }
+
+    .add {
+        width: 100%;
+        height: 33px;
+        font-size: 27px;
+        background-color: #fa6400;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .saved {
+        width: 100%;
+        height: 33px;
+        font-size: 27px;
+        background-color: #fa6400;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .notVisible {
+        display: none;
+    }
+
+    #Footer {
+        margin-top: 120px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        padding-top: 45px;
+        font-size: 20px;
+        background-color: #fa6400;
+        color: white;
+    }
+
+    .fa-registered {
+        margin-top: 4px;
+        margin-left: 3px;
+        font-size: 20px;
+    }
+}

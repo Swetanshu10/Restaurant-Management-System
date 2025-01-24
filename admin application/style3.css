@@ -1,0 +1,194 @@
+@media (width<320px) or (width>1550px) {
+  body {
+    display: none;
+  }
+}
+
+body {
+  background-color: #fcc49fca;
+  overflow-y: scroll;
+}
+
+.admin_box {
+  margin: 0 auto;
+  margin-top: 130px;
+  background-color: white;
+  border: none;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+input:focus {
+  outline: none;
+}
+
+#a_title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.fa-user {
+  padding-top: 10px;
+}
+
+#Admin {
+  margin: 0;
+  padding-top: 8px;
+  font-size: 30px;
+  color: black;
+}
+
+#login {
+  border-radius: 20px;
+  margin-bottom: 40px;
+  border: none;
+  background-color: #fa6400;
+  color: white;
+  cursor: pointer;
+}
+
+#fop {
+  color: blue;
+  font-size: 22px;
+}
+
+#fop:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  .admin_box {
+    width: 304px;
+    padding: 20px;
+  }
+
+  #UserName {
+    font-size: 20px;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  #Password {
+    font-size: 20px;
+  }
+
+  #login {
+    margin-top: 50px;
+    margin-left: 30%;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+#AuthenticatingBox {
+  width: 99%;
+  height: 99%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 20;
+  top: 0px;
+}
+
+.ihidden {
+  display: none;
+}
+
+#authSpinner {
+  margin: 0 auto;
+  margin-top: 17%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 7px solid #fa6400;
+  border-bottom: 7px solid rgba(0, 0, 0, 0);
+  animation: authSpin 1.6s linear infinite forwards;
+}
+
+#AuthenticatingBox p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@keyframes authSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .admin_box {
+    width: 304px;
+    padding: 20px;
+  }
+
+  #UserName {
+    font-size: 20px;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  #Password {
+    font-size: 20px;
+  }
+
+  #login {
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-bottom: 40px;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+/* Laptops (1024px to 1550px) */
+@media (min-width: 1024px) and (max-width: 1550px) {
+  .admin_box {
+    width: 304px;
+    padding: 20px;
+  }
+
+  #UserName {
+    font-size: 20px;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  #Password {
+    font-size: 20px;
+  }
+
+  #login {
+    margin-top: 50px;
+    margin-left: 30%;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Dishes</title>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="icon" type="image/png" sizes="16x16 32x32 48x48 76x76 96x96" href="Images/logo1.png" />
+    <link rel="manifest" href="manifest1.json" />
+    <script src="script6.js" type="module"></script>
+</head>
+
+<body>
+    <article id="orderFetched" class="ofnv">Dish saved sucessfully!!</article>
+
+    <p id="M_title">ADD NEW DISHES</p>
+    <form class="add_box">
+        <label for="time">Select Category</label>
+        <select class="options" id="time">
+            <option id="Breakfast">Starters</option>
+            <option id="Lunch">Main course</option>
+        </select>
+
+        <label for="vn">Select Veg/Non-Veg</label>
+        <select class="options vnv" id="vn">
+            <option id="VEG">VEG</option>
+            <option id="NON-VEG">NON-VEG</option>
+        </select>
+
+        <label for="Image">Insert Image</label>
+        <input type="file" name="Image" id="Image" accept="image/*" required>
+
+        <label for="dtitle">Enter Title</label>
+        <input type="text" name="dtitle" class="dish_input" required maxlength="24" id="dtitle"
+            placeholder="max 24 characters">
+
+        <label for="ddes">Enter Description</label>
+        <textarea name="ddes" required maxlength="222" id="ddes" placeholder="max 222 characters"></textarea>
+
+        <label for="dprice">Enter Price(Ex. 60)</label>
+        <input type="number" name="dprice" required id="dprice">
+
+        <label for="d_delTime">Enter Serving Time(Ex. 30 minutes)</label>
+        <input type="text" name="PRICE" required maxlength="29" id="d_delTime" placeholder="max 29 characters">
+
+        <input type="submit" id="SAVE">
+    </form>
+
+    <section id="AuthenticatingBox" class="ihidden">
+        <article id="authSpinner"></article>
+        <p>Saving details.....</p>
+    </section>
+</body>
+
+</html>

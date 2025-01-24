@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; 
+    script-src 'self' https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js https://apis.google.com/js/api.js https://apis.google.com 
+    https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js https://www.google.com/recaptcha/enterprise.js https://www.gstatic.com/recaptcha/releases/; 
+    style-src 'self'; 
+    img-src 'self'  https://firebasestorage.googleapis.com/;
+    frame-src https://desi-food-express.firebaseapp.com/ https://www.google.com/; 
+    connect-src 'self'  https://securetoken.googleapis.com https://identitytoolkit.googleapis.com/ https://firestore.googleapis.com/ https://content-firebaseappcheck.googleapis.com/" />
+    <title>Edit Dishes</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="icon" type="image/png" sizes="16x16 32x32 48x48 76x76 96x96" href="Images/logo1.png" />
+    <link rel="manifest" href="manifest1.json" />
+    <script src="script25.js" type="module"></script>
+    <script src="script5.js" type="module"></script>
+</head>
+
+<body>
+    <section id="Loader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+    <section id="main">
+        <header id="hh">
+            <img src="Images/logo1.png" alt="logo" id="LOGO">
+            <article>
+                <p id="title">Indian fusion</p>
+                <p id="caption">A culinary delight</p>
+            </article>
+        </header>
+
+        <p id="edit"><i><i class="fa-solid fa-pen"></i>Edit Dishes</i></p>
+
+        <lable for="searchBar"></lable>
+        <input type="search" id="searchBar" placeholder="Search dishes">
+
+        <button class="time" id="t1">Starters</button>
+        <button class="time" id="t2">Main Course</button>
+
+        <button class="box" id="BVEG">Veg</button>
+        <button class="box" id="BNONVEG">Non-veg</button>
+
+        <div class="dishes_container" id="cbv">
+
+            <div class="wrapper" id="bvw">
+            </div>
+
+            <section class="carets">
+                <button class="move dmove" id="move1" data-index="1">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <button class="move dmove" id="move2" data-index="2">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </section>
+        </div>
+
+        <div class="dishes_container hidden" id="cbnv">
+
+            <div class="wrapper" id="bnvw">
+            </div>
+
+            <section class="carets">
+                <button class="move dmove" id="move1" data-index="3">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <button class="move dmove" id="move2" data-index="4">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </section>
+        </div>
+
+        <div class="dishes_container hidden" id="clv">
+
+            <div class="wrapper" id="lvw">
+            </div>
+
+            <section class="carets">
+                <button class="move" id="move1" data-index="5">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <button class="move" id="move2" data-index="6">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </section>
+        </div>
+
+        <div class="dishes_container hidden" id="clnv">
+
+            <div class="wrapper" id="lnvw">
+            </div>
+
+            <section class="carets">
+                <button class="move" id="move1" data-index="7">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <button class="move" id="move2" data-index="8">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </section>
+        </div>
+
+        <footer id="Footer">Indian fusion
+            <i class="fa-sharp fa-solid fa-registered"></i></br>
+        </footer>
+    </section>
+</body>
+
+</html>

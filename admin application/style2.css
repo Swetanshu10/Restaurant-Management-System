@@ -1,0 +1,214 @@
+#sssd {
+    display: none;
+}
+
+#lssd {
+    display: none;
+}
+
+body {
+    background-color: #fcc49fca;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-y: scroll;
+}
+
+@media (width<320px) or (width>1550px) {
+    body {
+        display: none;
+    }
+}
+
+.box {
+    margin-top: 50px;
+}
+
+.box1 {
+    background-color: #fa6400;
+    color: white;
+}
+
+.box2 {
+    background-color: white;
+    color: black;
+}
+
+#login {
+    padding-top: 20px;
+}
+
+#a_para {
+    padding-bottom: 20px;
+}
+
+#alogin {
+    background-color: #fa6400;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    width: 95px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+/* Mobiles (320px to 767px) */
+@media (min-width: 320px) and (max-width: 769px) {
+    .box {
+        width: 100%;
+    }
+
+    .box1 {
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    #logo {
+        width: 105px;
+        height: 100px;
+    }
+
+    #title {
+        font-size: 20px;
+    }
+
+    #WELCOME {
+        font-size: 30px;
+    }
+
+    #message {
+        font-size: 20px;
+        margin-bottom: 0px;
+        padding-bottom: 25px;
+    }
+
+    .box2 {
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    #login {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    #a_para {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+}
+
+/* Tablets (769px to 1023px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .box {
+        width: 97vw;
+        height: 500px;
+        margin: 120px .5%;
+        display: flex;
+    }
+
+    .box1 {
+        min-width: 50%;
+        height: 500px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    #logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    #title {
+        margin-left: 1%;
+        font-size: 28px;
+    }
+
+    #WELCOME {
+        margin: 100px 1%;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    #message {
+        margin: 0px 1%;
+        font-size: 30px;
+    }
+
+    .box2 {
+        min-width: 50%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    #login {
+        margin: 40px 0px;
+        margin-right: 1vw;
+        font-size: 30px;
+    }
+
+    #a_para {
+        font-size: 18px;
+        margin-bottom: 30px;
+        margin-left: 7px;
+    }
+}
+
+/* Laptops (1024px to 1550px) */
+@media (min-width: 1024px) and (max-width: 1550px) {
+    .box {
+        width: 80vw;
+        height: 500px;
+        margin: 120px 9%;
+        display: flex;
+    }
+
+    .box1 {
+        min-width: 50%;
+        height: 500px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    #logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    #title {
+        margin-left: 1%;
+        font-size: 28px;
+    }
+
+    #WELCOME {
+        margin: 100px 1%;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    #message {
+        margin: 0px 1%;
+        font-size: 30px;
+    }
+
+    .box2 {
+        min-width: 50%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    #login {
+        margin: 40px .3vw;
+        font-size: 30px;
+    }
+
+    #a_para {
+        font-size: 18px;
+        margin-bottom: 30px;
+        margin-left: 7px;
+    }
+}

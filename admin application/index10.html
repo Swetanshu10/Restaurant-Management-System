@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; 
+    script-src 'self' https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js https://apis.google.com/js/api.js https://apis.google.com 
+    https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js https://www.google.com/recaptcha/enterprise.js https://www.gstatic.com/recaptcha/releases/; 
+    style-src 'self'; 
+    img-src 'self'  https://firebasestorage.googleapis.com/;
+    frame-src https://desi-food-express.firebaseapp.com/ https://www.google.com/; 
+    connect-src 'self'  https://securetoken.googleapis.com https://identitytoolkit.googleapis.com/ https://firestore.googleapis.com/ https://content-firebaseappcheck.googleapis.com/" />
+    <title>View Orders</title>
+    <link rel="stylesheet" href="style10.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="icon" type="image/png" sizes="16x16 32x32 48x48 76x76 96x96" href="Images/logo1.png" />
+    <link rel="manifest" href="manifest1.json" />
+    <script src="script10.js" type="module"></script>
+</head>
+
+<body>
+    <header id="hh">
+        <img src="Images/logo1.png" alt="logo" id="LOGO">
+        <p id="title">Indian fusion</p>
+        <p id="caption">A culinary delight</p>
+    </header>
+
+    <div class="contain">
+        <p id="my_orders">My Orders</p>
+    </div>
+
+    <article id="lbyn">
+        <button class="bld2" id="reload">load Orders</button>
+        <input type="search" placeholder="Search by Display name" id="dni">
+    </article>
+
+    <div id="main_container">
+        <div id="order_contain">
+            <div class="oinf">
+                <div class="user_info" id="info_1">
+                    <p id="order_id">0</p>
+                    <div class="details" id="d1">
+                        <p class="Name" id="N1">######</p>
+                        <p class="p_Num" id="s_n"><i class="fa-solid fa-phone"></i>0000</p>
+                        <p>Booked Table(s)</p>
+                        <ul id="tableList"></ul>
+                    </div>
+                </div>
+                <div class="Price" id="p1">
+                </div>
+            </div>
+
+            <div class="vnv_dishes">
+                <div class="veg_info" id="info_11">
+                    <p class="VEG" id="V1">VEG</p>
+                    <ul class="veg_order">
+                        <li>
+                            <p class="d_n">######</p>
+                            <p class="quantity">0</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="non_veg_info" id="info_12">
+                    <p class="NON_VEG" id="NV1">NON-VEG</p>
+                    <ul class="nonveg_order">
+                        <li>######<p class="quantity">0</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="reviewBox">
+                <div id="userreview">
+                    <p id="urp"></p>
+                </div>
+                <div id="ownerreview">
+                </div>
+            </div>
+        </div>
+
+        <div class="list_of_orders">
+        </div>
+    </div>
+
+    <section id="AuthenticatingBox" class="ihidden">
+        <article id="authSpinner"></article>
+        <p>Fetching orders.....</p>
+    </section>
+
+    <footer id="Footer">Indian fusion
+        <i class="fa-sharp fa-solid fa-registered"></i></br>
+    </footer>
+</body>
+
+</html

@@ -1,0 +1,89 @@
+@media (width<320px) or (width>1550px) {
+  body {
+    display: none;
+  }
+}
+
+body {
+  overflow-y: scroll;
+}
+
+/* Global */
+html {
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#Wohoo,
+#done {
+  color: indianred;
+}
+
+.back {
+  width: 150px;
+  height: 60px;
+  border-radius: 12px;
+  font-size: 27px;
+  background-color: hsl(19.44, 100%, 53%);
+  color: white;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+}
+
+#b2 {
+  padding-top: 10px;
+  height: 50px;
+}
+
+.fa-face-smile-beam {
+  color: rgb(255, 222, 52);
+}
+
+/* Mobile devices */
+@media (min-width: 320px) and (max-width: 767px) {
+  .fa-face-smile-beam {
+    font-size: 80px;
+    margin: 0 auto 20px;
+  }
+
+  #Wohoo {
+    font-size: 60px;
+    margin: 0 auto 20px;
+  }
+
+  #done {
+    font-size: 40px;
+    margin: 0 auto 20px;
+  }
+
+  .back {
+    margin: 0 auto 20px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1550px) {
+  .fa-face-smile-beam {
+    font-size: 120px;
+    margin: 0 auto 40px;
+  }
+
+  #Wohoo {
+    font-size: 90px;
+    margin: 0 auto 40px;
+  }
+
+  #done {
+    font-size: 60px;
+    margin: 0 auto 40px;
+  }
+
+  .back {
+    margin: 0 auto 40px;
+  }
+}

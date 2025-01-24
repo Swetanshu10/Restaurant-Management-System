@@ -1,0 +1,14 @@
+{
+  "name": "Indian Fusion",
+  "short_name": "IF",
+  "icons": [
+    {
+      "src": "./Images/logo1.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "description": "Restaurant App",
+  "start_url": "/",
+  "display": "standalone"
+}

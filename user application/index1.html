@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; 
+    script-src 'self' https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js https://apis.google.com/js/api.js https://apis.google.com 
+    https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js https://www.google.com/recaptcha/enterprise.js https://www.gstatic.com/recaptcha/releases/; 
+    style-src 'self'; 
+    img-src 'self'  https://firebasestorage.googleapis.com/;
+    frame-src https://desi-food-express.firebaseapp.com/ https://www.google.com/; 
+    connect-src 'self'  https://securetoken.googleapis.com https://identitytoolkit.googleapis.com/ https://firestore.googleapis.com/ https://content-firebaseappcheck.googleapis.com/" />
+    <title>Indian Fusion</title>
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="icon" type="image/png" sizes="16x16 32x32 48x48 76x76 96x96" href="Images/logo1.png" />
+    <link rel="manifest" href="manifest1.json" />
+    <script src="script1.js" type="module"></script>
+    <script src="script21.js" type="module"></script>
+</head>
+
+<body id="bdy">
+    <section id="loader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+    <main class="notVisible">
+        <nav>
+            <div id="bars">
+                <article class="iat">
+                    <img src="Images/logo1.png" alt="Logo" id="LOGO">
+                    <p class="nin"><i>IFR</i></p>
+                </article>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <ul id="nav-list" class="c2">
+                <li>
+                    <article class="iat">
+                        <img src="Images/logo1.png" alt="Logo" id="LOGO">
+                        <p class="nin"><i>IFR</i></p>
+                    </article>
+                </li>
+                <li><a href="index11.html" class="nav-item"><i class="fa-solid fa-address-card"></i>Update Details</a>
+                </li>
+                <li><a href="index8.html" class="nav-item"><i class="fa-solid fa-eye"></i>My Orders</a></li>
+                <li class="nav-item" id="cu"><i class="fa-solid fa-phone"></i>Contact Us<i
+                        class="fa-solid fa-caret-down" id="phoneCaret"></i>
+                    <ul class="contact_submenu">
+                        <li>XYZ</li>
+                        <li>+911111111111</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="nav-item" id="Logout"><i class="fa-solid fa-user"></i>Log Out</p>
+                </li>
+            </ul>
+        </nav>
+
+        <table class="header">
+            <tr>
+                <td>
+                    <h1 id="title">INDIAN FUSION</h1>
+                    <h3 id="caption">A culinary delight</h3>
+                </td>
+                <td>
+                    <img id="himg" src="./Images/Header image.jpg" alt="food image as header image"></img>
+                </td>
+            </tr>
+        </table>
+
+        <div class="start">
+            <p id="menu"><b>MENU</b></p>
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+        </div>
+
+        <lable for="searchBar"></lable>
+        <input type="search" id="searchBar" placeholder="Search dishes">
+
+        <button class="time" id="t1">Starters</button>
+        <button class="time" id="t2">Main Course</button>
+        <button class="box" id="BVEG">Veg</button>
+        <button class="box" id="BNONVEG">Non-veg</button>
+
+        <div class="wrapper" id="bvw"></div>
+        <div class="wrapper notVisible" id="bnvw"></div>
+        <div class="wrapper notVisible" id="lvw"></div>
+        <div class="wrapper notVisible" id="lnvw"></div>
+        <div class="wrapper notVisible" id="dvw"></div>
+        <div class="wrapper notVisible" id="dnvw"></div>
+
+        <div id="price_box">
+            <p class="bldt">Total</p>
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+            <div class="number" id="tCost">0</div>
+        </div>
+
+        <p class="disclaimer">*Images are for illustration purposes only</p>
+
+        <section id="buttonBox">
+            <button class="order" id="order3">PROCEED</button>
+            <button class="order" id="cart">CART</button>
+        </section>
+
+        <section class="darkBackground notVisible">
+
+            <article class="proceedSection">
+
+                <button id="GoBack">X</button>
+                <h3>Step 1: Select table(s)</h3>
+
+                <select title="restaurantTiming" id="restaurantTiming">
+                    <option value="morning">10AM-1PM</option>
+                    <option value="afternoon">3-6 PM</option>
+                    <option value="night">7-10 PM</option>
+                </select>
+
+                <section id="seatBookingSection">
+
+                    <article class="tables" id="T1">
+                        <svg class="diningTable" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path
+                                d="m240-160 60-150q9-23 29-36.5t45-13.5h66v-161q-153-5-256.5-45T80-660q0-58 117-99t283-41q167 0 283.5 41T880-660q0 54-103.5 94T520-521v161h66q24 0 44.5 13.5T660-310l60 150h-80l-48-120H368l-48 120h-80Zm240-440q97 0 183-17t126-43q-40-26-126-43t-183-17q-97 0-183 17t-126 43q40 26 126 43t183 17Zm0-60Z" />
+                        </svg>
+                        <p class="tableInfo tableID">T1</p>
+                        <p class="tableInfo numOfIndividuals">2 persons</p>
+                    </article>
+
+                    <article class="tables" id="T2">
+                        <svg class="diningTable" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path
+                                d="m240-160 60-150q9-23 29-36.5t45-13.5h66v-161q-153-5-256.5-45T80-660q0-58 117-99t283-41q167 0 283.5 41T880-660q0 54-103.5 94T520-521v161h66q24 0 44.5 13.5T660-310l60 150h-80l-48-120H368l-48 120h-80Zm240-440q97 0 183-17t126-43q-40-26-126-43t-183-17q-97 0-183 17t-126 43q40 26 126 43t183 17Zm0-60Z" />
+                        </svg>
+                        <p class="tableInfo tableID">T2</p>
+                        <p class="tableInfo numOfIndividuals">4 persons</p>
+                    </article>
+
+                    <article class="tables" id="T3">
+                        <svg class="diningTable" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path
+                                d="m240-160 60-150q9-23 29-36.5t45-13.5h66v-161q-153-5-256.5-45T80-660q0-58 117-99t283-41q167 0 283.5 41T880-660q0 54-103.5 94T520-521v161h66q24 0 44.5 13.5T660-310l60 150h-80l-48-120H368l-48 120h-80Zm240-440q97 0 183-17t126-43q-40-26-126-43t-183-17q-97 0-183 17t-126 43q40 26 126 43t183 17Zm0-60Z" />
+                        </svg>
+                        <p class="tableInfo tableID">T3</p>
+                        <p class="tableInfo numOfIndividuals">2 persons</p>
+                    </article>
+
+                    <article class="tables" id="T4">
+                        <svg class="diningTable" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path
+                                d="m240-160 60-150q9-23 29-36.5t45-13.5h66v-161q-153-5-256.5-45T80-660q0-58 117-99t283-41q167 0 283.5 41T880-660q0 54-103.5 94T520-521v161h66q24 0 44.5 13.5T660-310l60 150h-80l-48-120H368l-48 120h-80Zm240-440q97 0 183-17t126-43q-40-26-126-43t-183-17q-97 0-183 17t-126 43q40 26 126 43t183 17Zm0-60Z" />
+                        </svg>
+                        <p class="tableInfo tableID">T4</p>
+                        <p class="tableInfo numOfIndividuals">4 persons</p>
+                    </article>
+
+                    <article class="tables" id="T5">
+                        <svg class="diningTable" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path
+                                d="m240-160 60-150q9-23 29-36.5t45-13.5h66v-161q-153-5-256.5-45T80-660q0-58 117-99t283-41q167 0 283.5 41T880-660q0 54-103.5 94T520-521v161h66q24 0 44.5 13.5T660-310l60 150h-80l-48-120H368l-48 120h-80Zm240-440q97 0 183-17t126-43q-40-26-126-43t-183-17q-97 0-183 17t-126 43q40 26 126 43t183 17Zm0-60Z" />
+                        </svg>
+                        <p class="tableInfo tableID">T5</p>
+                        <p class="tableInfo numOfIndividuals">2 persons</p>
+                    </article>
+
+                    <article class="tables" id="T6">
+                        <svg class="diningTable" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path
+                                d="m240-160 60-150q9-23 29-36.5t45-13.5h66v-161q-153-5-256.5-45T80-660q0-58 117-99t283-41q167 0 283.5 41T880-660q0 54-103.5 94T520-521v161h66q24 0 44.5 13.5T660-310l60 150h-80l-48-120H368l-48 120h-80Zm240-440q97 0 183-17t126-43q-40-26-126-43t-183-17q-97 0-183 17t-126 43q40 26 126 43t183 17Zm0-60Z" />
+                        </svg>
+                        <p class="tableInfo tableID">T6</p>
+                        <p class="tableInfo numOfIndividuals">4 persons</p>
+                    </article>
+
+                    <article class="tables" id="T7">
+                        <svg class="diningTable" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path
+                                d="m240-160 60-150q9-23 29-36.5t45-13.5h66v-161q-153-5-256.5-45T80-660q0-58 117-99t283-41q167 0 283.5 41T880-660q0 54-103.5 94T520-521v161h66q24 0 44.5 13.5T660-310l60 150h-80l-48-120H368l-48 120h-80Zm240-440q97 0 183-17t126-43q-40-26-126-43t-183-17q-97 0-183 17t-126 43q40 26 126 43t183 17Zm0-60Z" />
+                        </svg>
+                        <p class="tableInfo tableID">T7</p>
+                        <p class="tableInfo numOfIndividuals">2 persons</p>
+                    </article>
+
+                    <article class="tables" id="T8">
+                        <svg class="diningTable" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path
+                                d="m240-160 60-150q9-23 29-36.5t45-13.5h66v-161q-153-5-256.5-45T80-660q0-58 117-99t283-41q167 0 283.5 41T880-660q0 54-103.5 94T520-521v161h66q24 0 44.5 13.5T660-310l60 150h-80l-48-120H368l-48 120h-80Zm240-440q97 0 183-17t126-43q-40-26-126-43t-183-17q-97 0-183 17t-126 43q40 26 126 43t183 17Zm0-60Z" />
+                        </svg>
+                        <p class="tableInfo tableID">T8</p>
+                        <p class="tableInfo numOfIndividuals">4 persons</p>
+                    </article>
+                </section>
+
+                <h3>Step 2: Click on place order to place your order</h3>
+                <button id="PlaceOrder">Place Order</button>
+                <p id="qrAmount"></p>
+            </article>
+        </section>
+
+        <section class="darkBackground notVisible" id="cartSection">
+            <article class="cartBox">
+                <article class="cartTitle">
+                    <h2>My Cart</h2>
+                    <img src="./Images/cart-shopping-solid.svg" alt="cart" />
+                </article>
+                <section id="dishList"></section>
+                <button id="GoBack2">Go Back</button>
+            </article>
+        </section>
+
+        <footer id="Footer">INDIAN FUSION
+            <i class="fa-sharp fa-solid fa-registered"></i></br>
+            <article>
+                <h3 id="abtus">About Us</h3>
+                <p id="about_us">We offer a unique culinary experience, blending traditional Indian flavors with global
+                    influences. Our menu features innovative dishes that cater to diverse tastes.
+                </p>
+            </article>
+        </footer>
+    </main>
+</body>
+
+</html>

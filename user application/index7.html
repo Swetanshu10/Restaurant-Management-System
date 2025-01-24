@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; 
+    script-src 'self' https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js https://apis.google.com/js/api.js https://apis.google.com 
+    https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js https://www.google.com/recaptcha/enterprise.js https://www.gstatic.com/recaptcha/releases/rz4DvU-cY2JYCwHSTck0_qm-/recaptcha__en.js
+    https://www.gstatic.com/recaptcha/releases/;
+    style-src 'self'; 
+    img-src 'self'  https://firebasestorage.googleapis.com/;
+    frame-src https://desi-food-express.firebaseapp.com/ https://www.google.com/; 
+    connect-src 'self' https://securetoken.googleapis.com https://identitytoolkit.googleapis.com/ https://firestore.googleapis.com/ https://content-firebaseappcheck.googleapis.com/" />
+    <title>User Login</title>
+    <link rel="stylesheet" href="style7.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="icon" type="image/png" sizes="16x16 32x32 48x48 76x76 96x96" href="Images/logo1.png" />
+    <link rel="manifest" href="manifest1.json" />
+    <script src="script7.js" type="module"></script>
+</head>
+
+<body>
+    <main class="admin_box">
+
+        <section id="LoginBox">
+            <article class="u_box">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <p id="Admin">Login</p>
+            </article>
+
+            <label for="oe2">Enter Email</label>
+            <input name="oe2" type="email" id="oe2" required>
+            <label for="op2">Enter Password</label>
+            <input name="op2" type="password" id="op2" required>
+            <p id="fop">Forgot password</p>
+            <button class="login" data-index="2">Proceed</button>
+
+            <p class="registerLine">Don't have an account?</p>
+            <button class="um" id="signUp">Register</button>
+        </section>
+
+        <section id="SignUpBox">
+
+            <article class="u_box">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <h2>Sign Up</h2>
+            </article>
+
+            <label for="oe">Enter Email</label>
+            <input name="oe" type="email" id="oe" required>
+            <label for="op">Enter Password</label>
+            <input name="op" type="password" id="op" placeholder="minimum 6 characters" required>
+            <button class="login" data-index="1" id="su">Sign Up</button>
+
+            <p class="registerLine">Already registered?</p>
+            <button class="um" id="LoginBanner">Login</button>
+
+        </section>
+
+    </main>
+
+    <section id="AuthenticatingBox" class="ihidden">
+        <article id="authSpinner"></article>
+        <p>Authenticating.....</p>
+    </section>
+</body>
+
+</html>

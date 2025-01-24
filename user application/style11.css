@@ -1,0 +1,285 @@
+@media (width<320px) or (width>1550px) {
+  body {
+    display: none;
+  }
+}
+
+body {
+  overflow-y: scroll;
+}
+
+p {
+  margin: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#M_title {
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: underline;
+}
+
+#instruction {
+  font-size: 22px;
+}
+
+label,
+input,
+textarea,
+button {
+  font-size: 22px;
+}
+
+textarea {
+  width: 255px;
+  height: 105px;
+}
+
+.add_box {
+  margin: 0 auto;
+  width: 500px;
+  height: 600px;
+  padding: 15px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+#saveDetails {
+  height: 50px;
+  width: 100px;
+  background-color: rgba(0, 128, 0, 0.833);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#del_section {
+  border: 2px solid black;
+  width: 320px;
+  height: 250px;
+  background-color: white;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#del_h {
+  margin: 0px 10px;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+#del_p {
+  display: block;
+  height: 1.7em;
+}
+
+#du {
+  background-color: red;
+  color: white;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+#dis {
+  text-align: center;
+  font-size: 20px;
+}
+
+.UserName {
+  border: 1px solid black;
+}
+
+.UNAME {
+  border: 1px solid black;
+}
+
+.address {
+  border: 1px solid black;
+}
+
+.number {
+  border: 1px solid black;
+}
+
+form input:valid {
+  border: 2px solid green;
+  color: green;
+}
+
+form input:invalid {
+  border: 2px solid red;
+  color: red;
+}
+
+form textarea:valid {
+  border: 2px solid green;
+  color: green;
+}
+
+form textarea:invalid {
+  border: 2px solid red;
+  color: red;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.nonEdit {
+  cursor: not-allowed;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 40vh 44%;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fa6400;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+.loaderHide {
+  display: none;
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+#AuthenticatingBox {
+  width: 99%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 20;
+  top: 0px;
+  align-content: center;
+}
+
+.ihidden {
+  display: none;
+}
+
+#authSpinner {
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 7px solid #fa6400;
+  border-bottom: 7px solid rgba(0, 0, 0, 0);
+  animation: authSpin 1.6s linear infinite forwards;
+}
+
+#AuthenticatingBox p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@keyframes authSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Queries */
+
+@media (min-width: 320px) and (max-width: 551px) {
+
+  .add_box {
+    width: 304px;
+    margin: 0 auto;
+  }
+
+  #dis {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 1024px) {
+
+  #M_title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .add_box {
+    width: 549px;
+    margin: 0 auto;
+  }
+
+
+}

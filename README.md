@@ -9,6 +9,14 @@ User Application has features like Account Management feature(Sign Up, Login, Lo
 # Admin Application Functionality
 Admin Application has Login,Logout,change password features, the admin can control the availability of all dishes, Add or edit details about new or existing dishes and check all the placed orders and add comments to each order
 
+# PERFORMANCE OPTIMISATION
+1. Image optimisation:- All uploaded images of dishes are compressed & converted to WebP format in admin app using javascript compressor library before saving it on cloud storage. The images are also loaded lazily.
+2. Progressive Rendering :- The app has been programmed in such a way that the page is displayed as soon as minimum expected content is present on it, example, on main menu page, the page is displayed when the minimum number of dishes are loaded onto the page.
+3. Loading animations are provided to improve responsiveness and UX of the app
+
+# SECURITY
+HTTPS hosting, authentication, redirection logic (redirecting to login page if protected pages of the app are directly accessed by unauthorized users), CSP (Content Security Policy), Firebase security rules and Firebase app check are implemented in the app to make it secure and safe
+
 # TECH-STACK
   # FRONT-END
   HTML, CSS, JavaScript: These are front end fundamentals, as this project was my first ever web development project, so I started with fundamentals and used 
@@ -35,11 +43,3 @@ I was working as the full stack developer on this project, devloping user interf
 
 # LEARNINGS
 I learnt how to develop a complete web application, how to show data and responses from backend on user interface and how to make user interface responsive for all devices
-
-# PERFORMANCE OPTIMISATION
-1. Image optimisation:- All uploaded images of dishes are compressed & converted to WebP format in admin app using javascript compressor library before saving it on cloud storage. The images are also loaded lazily.
-2. Progressive Rendering :- The app has been programmed in such a way that the page is displayed as soon as minimum expected content is present on it, example, on main menu page, the page is displayed when the minimum number of dishes are loaded onto the page.
-3. Loading animations are provided to improve responsiveness and UX of the app
-
-# SECURITY
-HTTPS hosting, authentication, redirection logic (redirecting to login page if protected pages of the app are directly accessed by unauthorized users), CSP (Content Security Policy), Firebase security rules and Firebase app check are implemented in the app to make it secure and safe

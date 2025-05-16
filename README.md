@@ -1,6 +1,7 @@
 # Restaurant-Management-System
 
-[VIDEO DEMO OF APP](https://youtu.be/L2SVFs8AGmY)
+Video demo of the system
+(https://youtu.be/L2SVFs8AGmY)
 
 # Overall System Functionality
 This system handles common restaurant management tasks like table booking by users,displaying the menu, user placing order,showing orders to restaurant personnel and taking user reviews. It consists of 2 applications.One is User Application and other is Admin Application. 

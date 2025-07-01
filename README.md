@@ -1,19 +1,20 @@
 # Restaurant-Management-System
 
+# Overall System Functionality
+This system handles common restaurant management tasks like table booking by users,displaying the menu, user placing order,showing orders to restaurant personnel and taking user reviews. It consists of 2 applications.One is User Application and other is Admin Application. 
+
+# User Application Functionality
+User Application has features like Account Management feature(Sign Up, Login, Logout, delete account and change password), Users add/edit their personal details like name and mobile number, they can view the live status(available/not available) of dishes under the menu section, they can select dish's quantity, view cart and total cost, book tables, place and add reviews about the order.
+
+# Admin Application Functionality
+Admin Application has Login,Logout,change password features, the admin can control the availability of all dishes, Add or edit details about new or existing dishes and check all the placed orders and add comments to each order
+
 # Video demo of the system
 (https://youtu.be/L2SVFs8AGmY)
 
 # System Design
 
 ![Project system design (3)](https://github.com/user-attachments/assets/9589fbbd-0b46-4d56-9811-73f89c08c1f3)
-
-
-# Overall System Functionality
-This system handles common restaurant management tasks like table booking by users,displaying the menu, user placing order,showing orders to restaurant personnel and taking user reviews. It consists of 2 applications.One is User Application and other is Admin Application. 
-# User Application Functionality
-User Application has features like Account Management feature(Sign Up, Login, Logout, delete account and change password), Users add/edit their personal details like name and mobile number, they can view the live status(available/not available) of dishes under the menu section, they can select dish's quantity, view cart and total cost, book tables, place and add reviews about the order
-# Admin Application Functionality
-Admin Application has Login,Logout,change password features, the admin can control the availability of all dishes, Add or edit details about new or existing dishes and check all the placed orders and add comments to each order
 
 # PERFORMANCE OPTIMISATION
 1. Image optimisation:- All uploaded images of dishes are compressed & converted to WebP format in admin app using javascript compressor library before saving it on cloud storage. The images are also loaded lazily.

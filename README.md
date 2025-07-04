@@ -12,10 +12,6 @@ Admin Application has Login,Logout,change password features, the admin can contr
 # Video demo of the system
 (https://youtu.be/L2SVFs8AGmY)
 
-# Deployed Apps Link
-1. User App: (https://indianfusion.web.app/)
-2. Admin App: (https://indianfusionowner.web.app/)
-
 # System Design
 
 ![Project system design (3)](https://github.com/user-attachments/assets/9589fbbd-0b46-4d56-9811-73f89c08c1f3)
